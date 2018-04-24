@@ -8,7 +8,7 @@ function getRandomColor() {
     var r = Math.floor(Math.random() * 256)
     var g = Math.floor(Math.random() * 256)
     var b = Math.floor(Math.random() * 256)
-    var rgb = `rgba(${r}, ${g}, ${b},0.3)`;
+    var rgb = `rgba(${r}, ${g}, ${b},0.4)`;
     return rgb;
 }
 
@@ -54,7 +54,7 @@ function Circle(x, y, radius, dx, dy, color) {
 
 var circleArray = []
 
-for (i = 0; i < 10; i++) {
+for (i = 0; i < 15; i++) {
     var radius = Math.random() * 60;
     let x = Math.random() * (window.innerWidth - radius * 2) + radius
     let y = Math.random() * (window.innerHeight - radius * 2) + radius
