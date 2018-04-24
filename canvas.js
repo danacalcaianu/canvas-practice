@@ -8,7 +8,7 @@ function getRandomColor() {
     var r = Math.floor(Math.random() * 256)
     var g = Math.floor(Math.random() * 256)
     var b = Math.floor(Math.random() * 256)
-    var rgb = `rgba(${r}, ${g}, ${b}),0.3`;
+    var rgb = `rgba(${r}, ${g}, ${b},0.3)`;
     return rgb;
 }
 
@@ -25,7 +25,7 @@ function Circle(x, y, radius, dx, dy, color) {
         c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
         c.fillStyle = this.color;
         c.fill()
-        c.strokeStyle = this.color;
+        c.strokeStyle = this.color
         c.stroke()
     }
 
